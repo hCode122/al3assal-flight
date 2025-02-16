@@ -1,0 +1,22 @@
+.splide__pagination {
+    position: relative !important;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .splide__pagination__page {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+  
+  .splide__pagination__page.is-active {
+    opacity: 1;
+    background-color: #000;
+  }
+  

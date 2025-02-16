@@ -1,0 +1,11 @@
+.authBg {
+    background-image: url("../../public/imgs/auth/airplaneBanner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blurredBg {
+    background: #FFFFFFCC;
+    backdrop-filter: blur(4px)
+}
