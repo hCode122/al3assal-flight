@@ -35,7 +35,7 @@ const MobileHeader = () => {
       </button>
       
       {isOpen && (
-        <nav className="absolute top-16 right-4 bg-white shadow-md p-4 h-[20rem] w-[15rem] rounded-md">
+        <nav className="absolute top-16 right-4 bg-white shadow-md p-4 h-[20rem] w-[15rem] rounded-md mheader-animate">
           <ul className="space-y-4">
             <li><Link href="#" onClick={() => setIsOpen(false)} className="block text-[1.5rem]">Home</Link></li>
             <li><Link href="#" onClick={() => setIsOpen(false)} className="block  text-[1.5rem]">About Us</Link></li>
