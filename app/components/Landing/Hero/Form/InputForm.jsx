@@ -15,8 +15,8 @@ const InputForm = () => {
         tripType: 'single',
         from: "",
         to: "",
-        refundable: '',
-        editable: '',
+        refundable: 0,
+        editable: 0,
         depart: '',
         passenger: ''
     });
@@ -43,7 +43,7 @@ const InputForm = () => {
             {
                 forms.map((form) => (
                     <MainBar key={form.id} inputData={inputData} id={form.id} onRemove={removeBar} 
-                    notMain={form.id != 1}  />
+                    notMain={form.id != 1} setFormData={setData}  />
 
                 ))
             }
@@ -52,8 +52,8 @@ const InputForm = () => {
             {inputData.tripType === "multi" ? <AddCityButton onClick={addBar} /> : null}
 
             <div className="flex gap-4">
-                <RadioButton text="refundable" />
-                <RadioButton text="editable" />
+                <RadioButton onClick={() => {setData({...inputData, ['refundable'] : 1})}} value={1} text="Refundable" selectedVal={inputData.refundable} />
+                <RadioButton text="editable" selectedVal={'1'} />
             </div>
         </div>
     );

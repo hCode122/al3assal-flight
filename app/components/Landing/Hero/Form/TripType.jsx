@@ -11,9 +11,9 @@ const TripType = ({ setData, inputData }) => {
 
     return (
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-2">
-            <RadioButton onClick={setTripType} value="single" text="One Way" tripType={inputData.tripType} />
-            <RadioButton onClick={setTripType} value="round" text="Round Trip" tripType={inputData.tripType} />
-            <RadioButton onClick={setTripType} value="multi" text="Multi City" tripType={inputData.tripType} />
+            <RadioButton onClick={setTripType} value="single" text="One Way" selectedVal={inputData.tripType} />
+            <RadioButton onClick={setTripType} value="round" text="Round Trip" selectedVal={inputData.tripType} />
+            <RadioButton onClick={setTripType} value="multi" text="Multi City" selectedVal={inputData.tripType} />
         </div>
     );
 };

@@ -1,13 +1,23 @@
 'use client'
 import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
+import '@splidejs/splide/css';
 import "./mobileGrid.css"
+import { useEffect } from "react";
 const images = [
+  "/imgs/Landing/Hero/mobile-card.png",
+  "/imgs/Landing/Hero/mobile-card.png",
+  "/imgs/Landing/Hero/mobile-card.png",
   "/imgs/Landing/Hero/mobile-card.png"
 ];
 
 const MobileGrid = () => {
+
+  useEffect(() => {
+    setTimeout(() => {
+      console.log(document.querySelector(".splide__pagination"));
+    }, 1000);
+  }, []);
     return (
       <Splide
         options={{
@@ -19,11 +29,11 @@ const MobileGrid = () => {
           interval: 3000,
           gap: "20px",
         }}
-        className="w-full h-[85%] lg:hidden"
+        className=" h-[30rem] lg:hidden text-black pb-14"
       >
         {images.map((src, index) => (
           <SplideSlide key={index}>
-            <img src={src} alt={`Slide ${index + 1}`} className="w-full " />
+            <img src={src} alt={`Slide ${index + 1}`} className="w-[80%] h-[28rem] mx-auto" />
           </SplideSlide>
         ))}
       </Splide>

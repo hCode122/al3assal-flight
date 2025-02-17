@@ -8,3 +8,29 @@ body {
     font-family: "Poppins";
     scroll-behavior: smooth;
 }
+
+
+.splide__pagination__page {
+    background: rgb(133, 133, 133) !important;
+    opacity: 0.1;
+    margin-top: 2rem !important;
+  }
+  
+  .splide__pagination__page.is-active {
+    background: black !important;
+    opacity: 1; 
+  }
+
+  .mheader-animate {
+    animation: header 0.4s forwards;
+  }
+
+  @keyframes header {
+    0% {
+      transform: scale(2%);
+    }
+
+    100% {
+      transform: scale(100%);
+    }
+  }

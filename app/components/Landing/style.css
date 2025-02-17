@@ -17,9 +17,10 @@
   
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(7, minmax(0,1fr)); 
+    grid-template-columns: repeat(8, minmax(0,1fr)); 
     max-width: 100%;
-    gap: 0.7rem;
+    row-gap: 2rem;
+    column-gap: 0.7rem;
     box-sizing: border-box;
     justify-content: center; 
   }
@@ -28,9 +29,9 @@
   
   .grid-item:nth-child(3n + 1) { grid-column: span 2; } 
   .grid-item:nth-child(3n + 2) { grid-column: span 2; } 
-  .grid-item:nth-child(3n + 3) { grid-column: span 3; } 
+  .grid-item:nth-child(3n + 3) { grid-column: span 4; } 
   
-  .grid-item:nth-child(6n + 4) { grid-column: span 3; }
+  .grid-item:nth-child(6n + 4) { grid-column: span 4; }
   .grid-item:nth-child(6n + 5) { grid-column: span 2; }
   .grid-item:nth-child(6n + 6) { grid-column: span 2; }
 
@@ -41,7 +42,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; /* Centers the image */
-    max-height: 16rem;
   }
 
   .contactBanner {

@@ -15,7 +15,7 @@ const LogoSwiper = () => {
         ref={splideRef}
         options={{
           type: 'loop', // Enable looping
-          perPage: 4, // Show 4 slides at a time
+          perPage: 5, // Show 4 slides at a time
           gap: '10px', // Space between slides
           autoplay: true, // Enable autoplay
           interval: 1500, // Slow interval for autoplay (1500ms per slide)
@@ -32,34 +32,34 @@ const LogoSwiper = () => {
         }}
       >
         <SplideSlide className="flex justify-center items-center">
-          <Image src={tempLogo} alt="company logo" height={95} width={95} />
+          <Image src={tempLogo} alt="company logo" height={85} width={85} />
         </SplideSlide>
         <SplideSlide className="flex justify-center items-center">
-          <Image src={tempLogo} alt="company logo" height={95} width={95} />
+          <Image src={tempLogo} alt="company logo" height={85} width={85} />
         </SplideSlide>
         <SplideSlide className="flex justify-center items-center">
-          <Image src={tempLogo} alt="company logo" height={95} width={95} />
+          <Image src={tempLogo} alt="company logo" height={85} width={85} />
         </SplideSlide>
         <SplideSlide className="flex justify-center items-center">
-          <Image src={tempLogo} alt="company logo" height={95} width={95} />
+          <Image src={tempLogo} alt="company logo" height={85} width={85} />
         </SplideSlide>
         <SplideSlide className="flex justify-center items-center">
-          <Image src={tempLogo} alt="company logo" height={95} width={95} />
+          <Image src={tempLogo} alt="company logo" height={85} width={85} />
         </SplideSlide>
         <SplideSlide className="flex justify-center items-center">
-          <Image src={tempLogo} alt="company logo" height={95} width={95} />
+          <Image src={tempLogo} alt="company logo" height={85} width={85} />
         </SplideSlide>
         <SplideSlide className="flex justify-center items-center">
-          <Image src={tempLogo} alt="company logo" height={95} width={95} />
+          <Image src={tempLogo} alt="company logo" height={85} width={85} />
         </SplideSlide>
         <SplideSlide className="flex justify-center items-center">
-          <Image src={tempLogo} alt="company logo" height={95} width={95} />
+          <Image src={tempLogo} alt="company logo" height={85} width={85} />
         </SplideSlide>
         <SplideSlide className="flex justify-center items-center">
-          <Image src={tempLogo} alt="company logo" height={95} width={95} />
+          <Image src={tempLogo} alt="company logo" height={85} width={85} />
         </SplideSlide>
         <SplideSlide className="flex justify-center items-center">
-          <Image src={tempLogo} alt="company logo" height={95} width={95} />
+          <Image src={tempLogo} alt="company logo" height={85} width={85} />
         </SplideSlide>
       </Splide>
     </div>

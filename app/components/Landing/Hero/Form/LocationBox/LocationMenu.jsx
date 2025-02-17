@@ -15,8 +15,9 @@ const LocationMenu = ({ locationData, setIsOpen, setSelectedLocation, type }) =>
     }, []);
 
     const handleSelect = (location) => {
-        setSelectedLocation(location);
         setIsOpen(false);
+        setSelectedLocation(location);
+       
     };
 
     return (
@@ -26,7 +27,7 @@ const LocationMenu = ({ locationData, setIsOpen, setSelectedLocation, type }) =>
                     {locationData.map((cardData, index) => (
                         <LocationCard
                             key={index}
-                            onClick={() => handleSelect(location)}
+                            onClick={() => handleSelect(cardData.location)}
                             cardData={cardData}
                             type={type}
                             className="px-4 py-2 hover:bg-gray-100 cursor-pointer"

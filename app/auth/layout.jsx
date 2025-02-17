@@ -21,7 +21,13 @@ const AuthContent = ({ children }) => {
             <div className={`h-[90%] w-[75%] m-auto rounded-[56px] p-4 flex gap-2 blurredBg relative
                 ${direction === "ltr" ? "flex-row" : "flex-row-reverse"}`}>
                     {backArrow ? (
-                        <Link href={backArrow}> <Image src={back} className="absolute top-10 right-8" alt="back button" width={30} height={30} /></Link>
+                        <Link href={backArrow}> <Image 
+                        src={back} 
+                        className={`absolute top-10 right-8 ${direction === "ltr" ? "filter invert-bright" : ""}`}
+                        alt="back button" 
+                        width={30} 
+                        height={30} 
+                      /></Link>
 
                     ) : null}
                 
@@ -29,7 +35,7 @@ const AuthContent = ({ children }) => {
                     {children}
                 </div>
 
-                <img src={airplaneImg} className="h-full w-full rounded-[56px] flex-1" alt="an image of an airplane" />
+                <img src={airplaneImg} className="h-full w-full rounded-[56px] flex-1 hidden lg:block" alt="an image of an airplane" />
             </div>
         </div>
     );

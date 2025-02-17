@@ -15,10 +15,10 @@ const SignIn = ({setDirection}) => {
         setBackArrow(null)
     }, []);
     return (
-        <div className="flex flex-col mt-8 gap-4 w-[80%] mr-auto ml-8 h-full">
+        <div className="flex flex-col mt-2  lg:mt-8 gap-4 w-[80%] mx-auto lg:mr-auto lg:ml-8 h-full">
             <AuthTitle title="Login" welcome={true} />
 
-            <form className="flex flex-col mt-6 gap-4 h-[64%]">
+            <form className="flex flex-col mt-4 lg:mt-6 gap-4 h-[64%]">
                 <TextInput placeholder="youremail@example.com" label={'Email'} />
                 <TextInput placeholder="Password" label={'Password'} isPW={true} isForgot={true} />
 
@@ -31,7 +31,7 @@ const SignIn = ({setDirection}) => {
 
                 <SubButton text="Login" />
                 
-                <div className="flex justify-center gap-2 mt-auto">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-2 mt-auto">
                 <span className="text-[1rem] font-[300]">Dont have an account?
                 </span>
                 <Link className="font-[600]" href={'/auth/sign-up'}>Signup</Link>

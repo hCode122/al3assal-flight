@@ -11,6 +11,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      filter: {
+        'invert-bright': 'invert(1) brightness(2)',
+      },
     },
   },
   plugins: [],

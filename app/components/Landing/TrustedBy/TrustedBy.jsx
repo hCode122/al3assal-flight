@@ -4,7 +4,7 @@ import LogoSwiper from './LogoSwiper';
 
 const TrustedBy = () => {
     return (
-        <div className='flex flex-col gap-18 px-10 lg:px-14'>
+        <div className='flex flex-col lg:mt-0 mt-24 lg:mt-0 gap-18 px-10 lg:px-14'>
                 <HeaderText text={'Trusted By'} />
                 <LogoSwiper />
         </div>

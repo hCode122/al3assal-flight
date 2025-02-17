@@ -30,7 +30,8 @@ const MobileHeader = () => {
       <Image src="/icons/Layout/logoMain.svg" alt="Logo" width={40} height={40} />
       
       <button onClick={() => setIsOpen(!isOpen)} className="p-2">
-        Burger
+      <Image src="/icons/Layout/burger.svg" alt="Logo" width={40} height={40} />
+
       </button>
       
       {isOpen && (

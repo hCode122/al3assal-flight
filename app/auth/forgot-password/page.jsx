@@ -16,7 +16,7 @@ const Forgot = () => {
     }, []);
 
     return (
-        <div className="flex flex-col mt-8 gap-4 w-[80%] mr-auto ml-8 h-full">
+        <div className="flex flex-col mt-2  lg:mt-8 gap-4 w-[80%] mx-auto lg:mr-auto lg:ml-8 h-full">
             <AuthTitle title="Forgot Password" welcome={false} />
 
             <form className="flex flex-col mt-6 gap-4 h-[66%]">

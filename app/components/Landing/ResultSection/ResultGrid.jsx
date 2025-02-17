@@ -3,20 +3,19 @@ import ResultCard from "./ResultCard"
 const ResultGrid = () => {
 
     return (
-        <div className="grid-container hidden lg:grid">
-            <ResultCard />
-            <ResultCard />
-            <ResultCard />
+        <div className="hidden lg:grid lg:grid-cols-8 lg:gap-x-[0.7rem] lg:gap-y-8 lg:max-w-full lg:justify-center">
+    <ResultCard />
+    <ResultCard />
+    <ResultCard />
 
-            <ResultCard />
-            <ResultCard />
-            <ResultCard />
+    <ResultCard />
+    <ResultCard />
+    <ResultCard />
 
-            <ResultCard />
-            <ResultCard />
-            <ResultCard />
-
-        </div>
+    <ResultCard />
+    <ResultCard />
+    <ResultCard />
+</div>
     )
 }
 

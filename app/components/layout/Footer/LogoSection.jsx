@@ -12,7 +12,7 @@ const LogoSection = () => {
             <Image src={logo} alt="footer main logo" width={95} height={95} className="hidden lg:block" />
              <Image src={logo} alt="footer main logo" width={75} height={75} className=" lg:hidden" />
 
-            <div className="flex gap-2 hidden lg:block ">
+            <div className="flex flex-row gap-2 hidden lg:block ">
                 <Image src={logoX} alt="X logo" width={25} height={25} />
                 <Image src={logoIg} alt="instagram logo" width={25} height={25} />
 
