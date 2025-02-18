@@ -33,7 +33,7 @@ const InputForm = () => {
 
 
     return (
-        <div className="flex flex-col bg-[#FFFFFFB5] blur-[4] w-full px-4 gap-4 mt-auto h-auto py-8">
+        <div className="flex flex-col  bg-[#FFFFFFB5] blur-[4] w-full px-4 gap-4 mt-auto h-auto py-8 ">
             <div className="flex justify-between">
                 <TripType inputData={inputData} setData={setData} />
                 <SupportButton />

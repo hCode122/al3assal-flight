@@ -6,7 +6,7 @@ const VisionSection = () => {
 
     return (
         <div className="flex flex-col gap-8 px-8 lg:px-14">
-            <div className="flex flex-col lg:flex-row gap-4 lg:gap-4 items-center">
+            <div className="flex flex-col lg:flex-row gap-4 lg:gap-4 items-start lg:items-center">
                 <div className="flex gap-4 items-center">
                     <Image src={plane1} width={100} height={100} alt="plane who section" />
                     <p className="text-[3rem] text-[#1C2B59] font-[700] w-[26rem]">Our Vision</p>
@@ -16,7 +16,7 @@ const VisionSection = () => {
                 </p>
                 </div>
 
-                <div className="flex flex-col lg:flex-row gap-4 lg:gap-4">
+                <div className="flex flex-col lg:flex-row gap-4 lg:gap-4 items-start lg:items-center">
 
                 <div className="flex gap-4 items-center">
                     <Image src={plane2} width={100} height={100} alt="plane who section" />
@@ -27,7 +27,7 @@ const VisionSection = () => {
                 </p>
                 </div>
 
-                <div className="flex flex-col lg:flex-row gap-4 lg:gap-4">
+                <div className="flex flex-col lg:flex-row gap-4 lg:gap-4 items-start lg:items-center">
 
                 <div className="flex gap-4 items-center">
                     <Image src={plane1} width={100} height={100} alt="plane who section" />

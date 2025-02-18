@@ -9,7 +9,6 @@ const LinkContainer = ({data}) => {
             <div className="flex flex-col gap-2">
             {
                 data.links.map((link, index) => {
-                    console.log(link)
 
                     return (
                         <Link key={index} href={link.url} className="text-[#1E1E1E] lg:text-md text-lg font-[400]">{link.title} </Link>

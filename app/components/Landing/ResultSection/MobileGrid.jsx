@@ -13,11 +13,6 @@ const images = [
 
 const MobileGrid = () => {
 
-  useEffect(() => {
-    setTimeout(() => {
-      console.log(document.querySelector(".splide__pagination"));
-    }, 1000);
-  }, []);
     return (
       <Splide
         options={{

@@ -33,16 +33,16 @@ const LocationBox = ({setFormData, formData}) => {
     )
 
     return (
-        <div className="relative flex flex-col items-center lg:flex-row gap-2 lg:gap-2 w-full lg:w-[47rem]">
-            <div onClick={() => setIsOriginOpen(true)} className="relative flex flex-col bg-[#F7F7FA] w-full lg:w-[23rem] pl-4 py-2
+        <div className="relative flex flex-col items-center w-full lg:flex-1 lg:flex-row gap-2 lg:gap-2 ">
+            <div onClick={() => setIsOriginOpen(true)} className="relative w-full lg:w-auto flex flex-1 flex-col bg-[#F7F7FA] pl-4 py-2
              rounded-[8px] cursor-pointer">
                 <p className="text-[#7A7A7A] text-[1rem] font-[]">From</p>
                 <p className="text-[#BFBFBF] text-[1.4rem] font-[400]">{selected ? selected : 'Origin'}</p>
                 {isOriginOpen ? <LocationMenu setSelectedLocation={setSelected} locationData={locationData['origin']} setIsOpen={setIsOriginOpen} /> : null}
             </div>
-                <Image className="hidden lg:block absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] z-[55]" src={switchImg}
+                <Image alt="switch button" className="hidden lg:block absolute left-[48%] translate-x-[-50%] top-[50%] translate-y-[-50%] z-[55]" src={switchImg}
                  height={50} width={50} />
-            <div onClick={() => setIsDestinationOpen(true)} className="relative flex flex-col bg-[#F7F7FA] w-full lg:w-[23rem] pl-4 lg:pl-12 py-2 rounded-[8px] cursor-pointer">
+            <div onClick={() => setIsDestinationOpen(true)} className="relative w-full lg:w-auto flex flex-col bg-[#F7F7FA] flex-1 pl-4 lg:pl-12 py-2 rounded-[8px] cursor-pointer">
                 <p className="text-[#7A7A7A] text-[1rem] font-[]">To</p>
                 <p className="text-[#BFBFBF] text-[1.4rem] font-[400]">{selected ? selected : 'Destination'}</p>
                 {isDestinationOpen ? <LocationMenu setSelectedLocation={setSelected} locationData={locationData['destination']} setIsOpen={setIsDestinationOpen} /> : null}

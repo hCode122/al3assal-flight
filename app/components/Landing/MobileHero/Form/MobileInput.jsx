@@ -47,8 +47,8 @@ const MobileInput = () => {
                 }}
             >
             {
-                forms.map((form) => (
-                    <SplideSlide className="flex justify-center items-center">
+                forms.map((form, index) => (
+                    <SplideSlide key={index} className="flex justify-center items-center">
 
                     <MainBar key={form.id} inputData={inputData} id={form.id} onRemove={removeBar} 
                     notMain={form.id != 1}  />

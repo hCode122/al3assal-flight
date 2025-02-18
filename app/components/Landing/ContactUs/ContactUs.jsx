@@ -3,7 +3,7 @@ import "../style.css"
 const ContactUs = () => {
 
     return (
-        <div id="contact" className="flex flex-col gap-4 lg:gap-0 lg:flex-row px-10 pb-36 lg:pb-0 lg:px-14 py-6 lg:justify-between contactBanner lg:h-[26rem]">
+        <div id="contact" className="flex flex-col gap-4 lg:gap-0 lg:flex-row px-10 pb-36 lg:pb-8 lg:px-14 py-6 lg:justify-between contactBanner lg:h-[26rem]">
             <div className="flex flex-col gap-2 lg:gap-0  text-white w-[80%] lg:w-[50%]" >
                 <p className="text-[2.2rem] lg:text-[3rem] font-[700]">Let us hear from you</p>
                 <p className="text-[1rem] lg:text-[1.4rem]">Stay one step ahead. Find the best value travel with the latest deal, tips & news.</p>

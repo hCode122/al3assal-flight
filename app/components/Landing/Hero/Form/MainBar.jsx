@@ -7,9 +7,9 @@ const MainBar = ({inputData, notMain, onRemove, setFormData, id}) => {
     const cancel = '/icons/Landing/Hero/cancel.svg';
 
     return (
-        <div className="flex flex-col lg:flex-row gap-2 items-center flex-1 w-full h-full">
+        <div className="flex flex-col lg:flex-row gap-2 w-full items-center   h-full">
                 <LocationBox setFormData={setFormData} formData={inputData} />
-                <div className="flex gap-2 w-full lg:w-[21rem]">
+                <div className="flex gap-2 w-full lg:w-auto  lg:flex-3">
                 <DateBox />
                 {inputData.tripType === 'single' ? <DateBox isDisabled={true} /> : <DateBox />}
                 </div>

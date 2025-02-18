@@ -27,6 +27,7 @@ const PassengerMenu = ({ passengerData, setIsOpen, setPassenger }) => {
                     {passengerData.map((passenger, index) => (
                         <PassengerCard
                             passenger={passenger}
+                            key={index}
                         />
                     ))}
                 </ul>

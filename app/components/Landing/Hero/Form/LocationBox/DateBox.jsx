@@ -20,14 +20,14 @@ const DateBox = ({ isDisabled }) => {
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <div
         onClick={handleClick}
-        className={`flex gap-4 bg-[#F7F7FA] flex-1 lg:flex-none lg:w-[10rem] pl-4 py-2 h-[5rem] lg:h-[4rem] relative cursor-pointer items-center rounded-[7.5px] ${
+        className={`flex gap-4 bg-[#F7F7FA] lg:flex-3 lg:flex-none px-4 w-full lg:w-auto  pl-4 py-2 h-[5rem] lg:h-[4rem] relative cursor-pointer items-center rounded-[7.5px] ${
           isDisabled ? 'cursor-not-allowed opacity-50' : ''
         }`}
       >
         <Image src={calender} alt="date button" width={25} height={25} />
         <div className="flex flex-col rounded-[8px] cursor-pointer">
-          <p className="text-[#7A7A7A] text-[1.1rem]">From</p>
-          <p className="text-[#BFBFBF] text-[0.8rem] font-[400]">
+          <p className="text-[#7A7A7A] text-[0.9rem] xl:text-[1.1rem]">From</p>
+          <p className="text-[#BFBFBF] text-[0.7rem] xl:text-[0.8rem] font-[400]">
             {selectedDate.format('MMM DD, YYYY')}
           </p>
         </div>
