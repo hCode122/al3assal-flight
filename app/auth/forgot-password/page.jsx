@@ -28,7 +28,7 @@ const Forgot = () => {
 
                 <SubButton text="Go To Login Page" />
                 
-                <div className="flex justify-center gap-2 mt-auto">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-2 mt-auto">
                 <span className="text-[1rem] font-[300]">Dont have an account?
                 </span>
                 <Link className="font-[600]" href={'/sign-up'}>Signup</Link>

@@ -18,13 +18,13 @@ const Verify = () => {
         setBackArrow("/auth/sign-up")
     }, []);
     return (
-        <div className="flex flex-col mt-2  lg:mt-8 gap-4 w-[80%] mx-auto lg:mr-auto lg:ml-8 relative">
+        <div className="flex flex-col mt-2  lg:mt-8 gap-4 w-[90%] md:w-[80%] mx-auto lg:mr-auto lg:ml-8 relative">
             <AuthTitle title="Verfiy Your Email" welcome={false} />
 
 
             <div className="flex flex-col  items-center mt-8">
-                <p className="text-[1rem] md:text-[1.5rem] font-[400]">Enter verification code</p>
-                <div className="flex flex-col md:flex-row gap-1 items-center mt-2 flex-wrap justify-center">
+                <p className="text-[1.12rem] md:text-[1.5rem] font-[400]">Enter verification code</p>
+                <div className="flex flex-col md:flex-row gap-1 items-center mt-3 flex-wrap justify-center">
                     <p className="text-[0.8rem] md:text-[1rem] font-[400] ">We've sent you a code to </p>
                     <span className="text-[0.8rem] md:text-[1rem] font-[700]">{email}</span>
                 </div>

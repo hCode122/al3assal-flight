@@ -35,7 +35,7 @@ const MobileHeader = () => {
 
 
   return (
-    <header className="fixed w-full flex lg:hidden items-center justify-between p-4  shadow-md md:hidden
+    <header className="fixed w-full flex lg:hidden items-center justify-between p-4  shadow-md lg:hidden
     rounded-b-[16px] mobileHeader z-[500]">
       <Image src="/icons/Layout/logoMain.svg" alt="Logo" width={40} height={40} />
       

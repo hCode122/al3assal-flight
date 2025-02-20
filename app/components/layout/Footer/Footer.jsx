@@ -32,10 +32,10 @@ const Footer = () => {
         {title: 'FigJam', url : "#"}
     ]}
     return (
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-44 px-8 h-auto lg:h-[27rem] pb-24 border-t-[1px] border-[#D9D9D9] bg-[#FAFAFA] mt-16">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 xl:gap-44 px-8 h-auto lg:h-[27rem] pb-24 border-t-[1px] border-[#D9D9D9] bg-[#FAFAFA] mt-16">
            <LogoSection />
 
-           <div className="flex flex-col lg:flex-row gap-4 lg:gap-36">
+           <div className="flex flex-col md:flex-row lg:flex-col gap-4 md:gap-16 lg:gap-20 xl:gap-36 flex-wrap">
                 <LinkContainer data={useCases} />
                 <LinkContainer data={explore} />
                 <LinkContainer data={resources} />

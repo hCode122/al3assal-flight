@@ -52,8 +52,8 @@ const InputForm = () => {
             {inputData.tripType === "multi" ? <AddCityButton onClick={addBar} /> : null}
 
             <div className="flex gap-4">
-                <RadioButton onClick={() => {setData({...inputData, ['refundable'] : 1})}} value={1} text="Refundable" selectedVal={inputData.refundable} />
-                <RadioButton text="editable" selectedVal={'1'} />
+                <RadioButton onClick={() => {setData({...inputData, ['refundable'] : !inputData.refundable})}} value={1} text="Refundable" selectedVal={inputData.refundable} />
+                <RadioButton onClick={() => {setData({...inputData, ['editable'] : !inputData.editable})}} value={1} text="Editable" selectedVal={inputData.editable} />
             </div>
         </div>
     );

@@ -16,10 +16,10 @@ const SignUp = () => {
     }, []);
 
     return (
-        <div className="flex flex-col mt-2  lg:mt-8 gap-4 w-[80%] mx-auto lg:mr-auto lg:ml-8 h-full">
+        <div className="flex flex-col sm:mt-2  lg:mt-8 gap-4 w-[80%] mx-auto lg:mr-auto lg:ml-8 h-full max-h-[100%] flex-shrink-1">
             <AuthTitle title="Sign up" welcome={true} />
 
-            <form className="flex flex-col mt-4 lg:mt-6 gap-4 h-[64%]">
+            <form className="flex flex-col sm:mt-3 mt-4 lg:mt-6 sm:gap-4 gap-4 h-[64%]">
                 <TextInput placeholder={"yourmail@example.com"} label={'Email'} />
                 <TextInput placeholder={"Password"} label={'Password'} isPW={true} />
                 <TextInput placeholder={"Confim Password"} label={'Confirm Password'} isPW={true} />

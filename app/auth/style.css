@@ -9,3 +9,7 @@
     background: #FFFFFFCC;
     backdrop-filter: blur(4px)
 }
+
+.invertArrow {
+    filter: invert(1) brightness(100); /* Inverts black to white */
+}

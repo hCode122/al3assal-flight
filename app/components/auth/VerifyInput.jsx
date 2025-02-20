@@ -28,7 +28,7 @@ const VerifyInput = () => {
   };
 
   return (
-    <div className="flex justify-center gap-2 mt-5">
+    <div className="flex justify-center gap-2 mt-5 max-w-[100%]">
       {inputs.map((input, index) => (
         <input
           key={index}
@@ -38,7 +38,7 @@ const VerifyInput = () => {
           onKeyDown={(e) => handleKeyDown(e, index)}
           maxLength="1"
           ref={(el) => (inputRefs.current[index] = el)}
-          className="w-12 h-12 md:w-16 md:h-16 text-center text-2xl border-[1px]  border-[#555555] mt-2 rounded-md
+          className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 text-center text-xl md:text-2xl border-[1px]  border-[#555555] mt-2 rounded-md
            focus:outline-none focus:ring-2 focus:ring-blue -500 bg-transparent"
         />
       ))}
