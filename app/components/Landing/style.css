@@ -1,5 +1,5 @@
 .heroBg {
-    background-image: url("../../../public/imgs/Landing/Hero/heroBanner.png");
+    background-image: url("/imgs/Landing/Hero/heroBanner.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -42,14 +42,14 @@
 
   
   .resultCard {
-    background-image: url("../../../public/imgs/Landing/Hero/cardBg.png");
+    background-image: url("/imgs/Landing/Hero/cardBg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; /* Centers the image */
   }
 
   .contactBanner {
-    background-image: url("../../../public/imgs/Landing/Hero/contactBanner.png");
+    background-image: url("/imgs/Landing/Hero/contactBanner.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; /* Centers the image */
@@ -63,7 +63,7 @@
   }
 
   .mobileBanner {
-    background-image: url("../../../public/imgs/Landing/Hero/MobileBanner.png");
+    background-image: url("/imgs/Landing/Hero/MobileBanner.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
