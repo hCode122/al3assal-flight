@@ -38,7 +38,7 @@ const InputForm = () => {
                 <TripType inputData={inputData} setData={setData} />
                 <SupportButton />
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 max-h-[4.95rem] overflow-auto inputForm">
 
             {
                 forms.map((form) => (

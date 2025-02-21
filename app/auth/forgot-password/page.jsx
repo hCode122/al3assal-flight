@@ -16,7 +16,7 @@ const Forgot = () => {
     }, []);
 
     return (
-        <div className="flex flex-col mt-2  lg:mt-8 gap-4 w-[80%] mx-auto lg:mr-auto lg:ml-8 h-full">
+        <div className="flex flex-col mt-2   gap-4 w-[80%] mx-auto lg:mr-auto lg:ml-8 h-full">
             <AuthTitle title="Forgot Password" welcome={false} />
 
             <form className="flex flex-col mt-6 gap-4 h-[66%]">
@@ -31,7 +31,7 @@ const Forgot = () => {
                 <div className="flex flex-col md:flex-row items-center justify-center gap-2 mt-auto">
                 <span className="text-[1rem] font-[300]">Dont have an account?
                 </span>
-                <Link className="font-[600]" href={'/sign-up'}>Signup</Link>
+                <Link className="font-[600]" href={'/auth/sign-up'}>Signup</Link>
                 </div>
                 
             </form>

@@ -15,7 +15,7 @@ const SignIn = ({setDirection}) => {
         setBackArrow(null)
     }, []);
     return (
-        <div className="flex flex-col sm:mt-2  lg:mt-8 gap-4 w-[90%] md:w-[80%] mx-auto lg:mr-auto lg:ml-8 h-full flex-shrink-1">
+        <div className="flex flex-col sm:mt-2 gap-4 w-[90%] md:w-[80%] mx-auto lg:mr-auto lg:ml-8 h-full flex-shrink-1">
             <AuthTitle title="Login" welcome={true} />
 
             <form className="flex flex-col sm:mt-3 mt-4 lg:mt-6 sm:gap-4 gap-2 h-[64%] w-[100%">

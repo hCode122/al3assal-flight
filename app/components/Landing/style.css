@@ -5,10 +5,10 @@
     background-position: center;
 }
 
-.dropdown {
+.dropdown , .inputForm {
     overflow-y: auto; 
     
-    scrollbar-width: none; 
+    scrollbar-width:thin; 
   }
   
   .dropdown::-webkit-scrollbar {

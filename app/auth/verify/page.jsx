@@ -18,7 +18,7 @@ const Verify = () => {
         setBackArrow("/auth/sign-up")
     }, []);
     return (
-        <div className="flex flex-col mt-2  lg:mt-8 gap-4 w-[90%] md:w-[80%] mx-auto lg:mr-auto lg:ml-8 relative">
+        <div className="flex flex-col mt-2   gap-4 w-[90%] md:w-[80%] mx-auto lg:mr-auto lg:ml-8 relative">
             <AuthTitle title="Verfiy Your Email" welcome={false} />
 
 
