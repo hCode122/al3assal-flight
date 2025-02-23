@@ -2,7 +2,7 @@
     background-image: url("/imgs/Landing/Hero/heroBanner.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 0px;
 }
 
 .dropdown , .inputForm {

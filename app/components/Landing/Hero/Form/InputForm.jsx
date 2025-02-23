@@ -1,11 +1,8 @@
 'use client'
-const { useState } = require("react")
+const { useState, useEffect } = require("react")
 import TripType from "./TripType"
 import SupportButton from "./SupportButton"
-import LocationBox from "./LocationBox/LocationBox"
-import DateBox from "./LocationBox/DateBox"
-import PassengerBox from "./PassengerBox/PassengerBox"
-import SearchButton from "./LocationBox/SearchButton"
+
 import RadioButton from "./RadioButton"
 import Image from "next/image"
 import AddCityButton from "./PassengerBox/AddCityButton"
@@ -27,18 +24,25 @@ const InputForm = () => {
         setForms([...forms, { id: Date.now() }]); 
     };
 
+    useEffect(() => {
+        if (inputData != "multi") {
+
+            setForms([{ id: 1 }])
+        }
+    }, [inputData])
+
     const removeBar = (id) => {
         setForms(forms.filter(form => form.id !== id));
     };
 
 
     return (
-        <div className="flex flex-col  bg-[#FFFFFFB5] blur-[4] w-full px-4 gap-4 mt-auto h-auto py-8 ">
+        <div className="flex flex-col  bg-[#FFFFFFB5] blur-[4] w-full px-4 gap-4 mt-auto h-auto py-8 z-[4]">
             <div className="flex justify-between">
                 <TripType inputData={inputData} setData={setData} />
                 <SupportButton />
             </div>
-            <div className="flex flex-col gap-2 max-h-[4.95rem] overflow-auto inputForm">
+            <div className="flex flex-col gap-2 overflow-auto h-[5.5rem] inputForm">
 
             {
                 forms.map((form) => (

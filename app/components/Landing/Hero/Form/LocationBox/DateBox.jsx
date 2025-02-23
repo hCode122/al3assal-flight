@@ -41,7 +41,18 @@ const DateBox = ({ isDisabled }) => {
           onClose={() => setDateOpen(false)}
           sx={{ display: 'none' }}
           slotProps={{
-            
+            desktopPaper: {
+              sx: {
+                '& .MuiPickersDay-root': { color: '#1D1B20' }, // Number color
+                '& .MuiDialogActions-root': { color: '#1C2B59' }, // Footer background
+              },
+            },
+            mobilePaper: {
+              sx: {
+                '& .MuiPickersDay-root': { color: '#1D1B20' },
+                '& .MuiDialogActions-root': { color: '#1C2B59' },
+              },
+            },
           }}
         />
       )}

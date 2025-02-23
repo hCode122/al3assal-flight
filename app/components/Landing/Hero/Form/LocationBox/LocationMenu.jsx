@@ -21,7 +21,7 @@ const LocationMenu = ({ locationData, setIsOpen, setSelectedLocation, type }) =>
     };
 
     return (
-        <div className="absolute left-[0] bottom-[12] w-full lg:w-[23rem] " ref={dropdownRef}>
+        <div className="absolute left-[0] bottom-[12] w-full lg:w-[23rem]" ref={dropdownRef}>
           
                 <ul className="absolute  left-0 mt-1 w-full  rounded-[16px]  shadow-md z-[110] max-h-[24rem] overflow-auto">
                     {locationData.map((cardData, index) => (
