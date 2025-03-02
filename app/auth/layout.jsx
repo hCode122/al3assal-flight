@@ -4,10 +4,13 @@ import Image from "next/image"
 import "./style.css"
 import Link from "next/link"
 import { DirectionProvider, useDirection } from "./DirectionContext";
+import { AuthProvider } from "../_contextProviders/AuthContext"
 const AuthLayout = ({ children }) => {
     return (
         <DirectionProvider>
+            <AuthProvider>
             <AuthContent>{children}</AuthContent>
+            </AuthProvider>
         </DirectionProvider>
     );
 };

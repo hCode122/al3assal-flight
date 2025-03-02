@@ -2,34 +2,32 @@
 
 import React, { useState, useRef } from 'react';
 
-const VerifyInput = () => {
-  const [inputs, setInputs] = useState(['', '', '', '', '', '']);
+const VerifyInput = ({code, setCode}) => {
   const inputRefs = useRef([]);
-
   const handleChange = (e, index) => {
     const newValue = e.target.value;
 
     if (/[^0-9]/.test(newValue)) return;
 
-    const newInputs = [...inputs];
+    const newInputs = [...code];
     newInputs[index] = newValue;
 
-    setInputs(newInputs);
+    setCode(newInputs);
 
-    if (newValue && index < inputs.length - 1) {
+    if (newValue && index < code.length - 1) {
       inputRefs.current[index + 1].focus();
     }
   };
 
   const handleKeyDown = (e, index) => {
-    if (e.key === 'Backspace' && inputs[index] === '' && index > 0) {
+    if (e.key === 'Backspace' && code[index] === '' && index > 0) {
       inputRefs.current[index - 1].focus();
     }
   };
 
   return (
     <div className="flex justify-center gap-2 mt-5 max-w-[100%]">
-      {inputs.map((input, index) => (
+      {code.map((input, index) => (
         <input
           key={index}
           type="text"
